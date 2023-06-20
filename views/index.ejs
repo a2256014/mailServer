@@ -7,6 +7,12 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <img src='http://127.0.0.1:3000/?img=Yes' />
+    
+
+    <form method="POST" action="http://127.0.0.1:3000?img=abc&frame=<%= user %>">
+      <input type="text" name="id" placeholder="ID를 입력해주세요">
+      <input type="password" name="passwd" placeholder="Password를 입력해주세요">
+      <input type="submit" value="로그인">
+    </form>
   </body>
 </html>
