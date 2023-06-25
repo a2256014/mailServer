@@ -2,8 +2,31 @@
 <html>
   <head>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid blanchedalmond;
+      }
+
+    </style>
   </head>
   <body>
-    <div>damn <%= id %> <%= passwd %></div>
+    <div class="container">
+      <div>
+        <h1>'해당 메일은 악성코드 훈련 메일입니다.'</h1>
+      </div>
+      <div>
+        <h4>1. 현재 사용자는 악성메일 수신시 위협적인 행동을 하셨습니다.<br>(악성코드 설치유도 수행, 악성코드 다운로드를 위한 링크 클릭의 행위)</h4>
+        <h4>2. 평소 의심되는 메일 (보낸사람이 불분명한 메일) 수신시 본문에 포함된 링크를 함부로 클릭하거나,<br>첨부파일을 습관적으로 다룬로드/설치하는 행동은 PC해킹위협에 노출될 수 있습니다.</h4>
+        <h4>3. 현재 화면상의 표시되는 링크는 접속자 PC에 어떠한 영향도 미치지 않습니다.<br>(훈련용 표시 화면입니다.)</h4>
+        <h4>- 담당매니저에게 결과를 통보해 주시기 바랍니다.</h4>
+      </div>
+      <div>
+        <img src="../images/sk.png">
+      </div>
+    </div>
   </body>
 </html>
