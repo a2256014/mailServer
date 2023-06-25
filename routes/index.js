@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
     }
   })
   //여기선 페이지를 보여주고 싶어
-  res.render('index', { title: 'SK', user: `${readUser}`});
+  res.render('index', { user: `${readUser}`});
 });
 
 router.post('/', function(req, res, next) {

@@ -1,8 +1,165 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/body.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  line-height: 1.25rem;
+  height: 368.25px;
+}
+
+.inner{
+  display: block;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 352px;
+  width: calc(100% - 40px);
+  min-height: 280px;
+  padding: 44px;
+  margin-bottom: 28px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.component{
+  margin-top: 16px;
+}
+
+.backButton{
+  min-height: 24px;
+  width: 24px;
+  min-width: 24px;
+  float: left;
+  padding: 0;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 12px;
+  margin-right: 2px;
+  cursor: pointer;
+  :hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
+.loginHeader{
+  line-height: 1.75rem;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  color: #1b1b1b;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.placeholderContainer{
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.input{
+  max-width: 338px;
+  max-height: 23px;
+  border-style: solid;
+  padding: 6px 10px;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.6);
+  height: 36px;
+  outline: none;
+  border-radius: 0;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding-left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  line-height: inherit;
+  font: inherit;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.input:focus{
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: -internal-light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+  color: fieldtext !important;
+}
+
+.a-group{
+  margin-bottom: 16px;
+  display: block;
+  font-size: .8125rem;
+  color: #1b1b1b;
+  text-align: left;
+}
+
+a:link{
+  color: #0067b8;
+}
+
+a{
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:-webkit-any-link{
+  cursor: pointer;
+}
+
+.login-button{
+  bottom: 0;
+  right: 0;
+  text-align: right !important;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 400;
+  font-size: .9375rem;
+  line-height: 1.25rem;
+}
+
+.input-button{
+  margin: 0;
+  max-width: 100%;
+  color: #fff;
+  border-color: #0067b8;
+  background-color: #0067b8;
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 32px;
+  border: none;
+  padding: 4px 12px 4px 12px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  touch-action: manipulation;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
 }

